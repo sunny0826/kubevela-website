@@ -6,4 +6,4 @@
 
 
 [GitHub](https://github.com/oam-dev/kubevela)
-[Get Started](en-us/introduction)
+[Get Started](en/introduction)
