@@ -1,5 +1,5 @@
 - Overview
-  - [Introduction](/en/introduction.md)
+  - [Introduction](/en/README.md)
   - [Installation](/en/install.md)
   - [Quick Start](/en/quick-start.md)
   - [Concepts](/en/concepts.md)
@@ -58,5 +58,4 @@
 - Internals
   - [Design and Architecture](/en/design.md)
 
-- Roadmap
-  - [Roadmap of KubeVela](/en/roadmap.md)
+- [Roadmap](/en/roadmap.md)

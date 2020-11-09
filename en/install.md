@@ -146,7 +146,8 @@ We have installed the following dependency components along with Vela server com
 - [Cert-manager](https://cert-manager.io/)
 - [Flagger](https://flagger.app/)
 
-> NOTE: If you are not using minikube or kind, please make sure to [install ingress-nginx](https://kubernetes.github.io/ingress-nginx/deploy/) by yourself.
+> [!NOTE]
+> If you are not using minikube or kind, please make sure to [install ingress-nginx](https://kubernetes.github.io/ingress-nginx/deploy/) by yourself.
 
 The config has been saved in a ConfigMap in "vela-system/vela-config":
 
