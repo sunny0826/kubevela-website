@@ -10,10 +10,8 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-changelog-plugin@latest/dist/style.css" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-
-
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
 </head>
 
 <body>
@@ -32,19 +30,21 @@
         window.$docsify = {
             name: 'KubeVela',
             repo: 'oam-dev/kubevela',
-            logo: '/static/logo.svg',
-            formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}',
+            logo: '/resources/KubeVela-02.png height="100px"',
             baseUrl: '/kubevela-website/',
             relativePath: true,
             coverpage: true,
             autoHeader: true,
             loadSidebar: true,
             themeColor: '#296fff',
-            subMaxLevel: 2,
+            subMaxLevel: 1,
             auto2top: true,
-            loadNavbar: false, // IMPORTANT
-            changelog: 'CHANGELOG.md', // path of your changelog, it can be remote as well
-            homepage: 'introduction.md',
+            loadNavbar: true,
+            formatUpdated: '{YYYY}.{MM}.{DD} {HH}:{mm}',
+            homepage: '/en/introduction.md',
+            alias: {
+                '/.*/_navbar.md': '/_navbar.md',
+            },
             search: {
                 placeholder: {
                     '/': 'Type to search',
@@ -77,11 +77,11 @@
                 successText: 'Copied'
             },
             tabs: {
-                persist: true,      
-                sync: true,      
-                theme: 'classic', 
-                tabComments: true,      
-                tabHeadings: true      
+                persist: true,
+                sync: true,
+                theme: 'classic',
+                tabComments: true,
+                tabHeadings: true
             },
             plugins: [
                 function (hook) {
@@ -106,11 +106,11 @@
     <script src="static/zoom-image.js"></script>
     <script src="static/docsify-share.min.js"></script>
     <script src="static/docsify-pagination.min.js"></script>
-    <script src="static/docsify-changelog-plugin.js"></script>
     <script src="static/prism-bash.min.js"></script>
     <script src="static/prism-go.min.js"></script>
     <script src="https://unpkg.com/docsify-copy-code@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 
 </html>
